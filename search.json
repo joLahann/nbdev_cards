@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "deck.html",
+    "href": "deck.html",
+    "title": "Deck",
+    "section": "",
+    "text": "source\n\nDeck\n\n Deck ()\n\nA deck of 52 cards\n\nd = Deck()\nd\n\nA♣️;2♣️;3♣️;4♣️;5♣️;6♣️;7♣️;8♣️;9♣️;10♣️;J♣️;Q♣️;K♣️;A♦️;2♦️;3♦️;4♦️;5♦️;6♦️;7♦️;8♦️;9♦️;10♦️;J♦️;Q♦️;K♦️;A❤️;2❤️;3❤️;4❤️;5❤️;6❤️;7❤️;8❤️;9❤️;10❤️;J❤️;Q❤️;K❤️;A♠️;2♠️;3♠️;4♠️;5♠️;6♠️;7♠️;8♠️;9♠️;10♠️;J♠️;Q♠️;K♠️\n\n\n\ntest_eq(len(d),52)\n\n\nassert Card(1,1) in d\n\n\nsource\n\n\nDeck.pop\n\n Deck.pop (idx:int=-1)\n\nRemove one card from the deck\n\nd = Deck()\ntest_eq(d.pop(),Card(3,13)) # K♠️\n\n\nsource\n\n\nDeck.remove\n\n Deck.remove (card:nbdev_cards.card.Card)\n\nRemoves card from the deck or raises exception if it is not there\n\n\n\n\nType\nDetails\n\n\n\n\ncard\nCard\nCard to remove\n\n\n\n\ndeck = Deck()\ncard23 = Card(2,3)\ndeck.remove(card23)\nassert card23 not in deck\n\n\nsource\n\n\nDeck.shuffle\n\n Deck.shuffle ()\n\nShuffles the deck\n\nsource\n\n\ndraw_n\n\n draw_n (n:int, replace:bool=True)\n\nDraw n cards\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nn\nint\n\nnumber of cards to draw\n\n\nreplace\nbool\nTrue\ndraw with replacement\n\n\n\n\ndraw_n(13, replace=False)\n\n[8♣️, A♣️, 8♠️, K❤️, J❤️, 6♠️, 2❤️, A♠️, 4♣️, 5♠️, 10♣️, K♦️, 5♣️]"
+  },
+  {
+    "objectID": "cards.html",
+    "href": "cards.html",
+    "title": "Card – A basic plain card",
+    "section": "",
+    "text": "We will be using numbers to represent playing card clubs and ranks. These are the suits:\nsuits\n\n['♣️', '♦️', '❤️', '♠️']\nThese are the ranks:\nranks\n\n[None, 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']\nsource"
+  },
+  {
+    "objectID": "cards.html#comparison-operators",
+    "href": "cards.html#comparison-operators",
+    "title": "Card – A basic plain card",
+    "section": "Comparison Operators",
+    "text": "Comparison Operators\nEquity, less than, and greater than:\n\ntest_eq(Card(suit=1, rank =3),Card(suit=1, rank =3))\n\n\ntest_ne(Card(suit=1, rank =3),Card(suit=2, rank =3))\ntest_ne(Card(suit=1, rank =2),Card(suit=1, rank =3))\n\n\nassert Card(suit=1, rank =3) &lt; Card(suit=2, rank =3)\n\n\nassert Card(suit=4, rank =3) &gt; Card(suit=2, rank =3)\nassert not Card(suit=1, rank =3) &gt; Card(suit=2, rank =3)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev_cards",
+    "section": "",
+    "text": "Install using:\npip install nbdev_cards"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev_cards",
+    "section": "",
+    "text": "Install using:\npip install nbdev_cards"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev_cards",
+    "section": "How to use",
+    "text": "How to use\nThe lib provides a Card class\n\nCard(1,1)\n\nA♦️\n\n\n\nsuits\n\n['♣️', '♦️', '❤️', '♠️']"
+  }
+]
