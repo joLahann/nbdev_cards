@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev_cards"
+  site-url: "https://joLahann.github.io/nbdev_cards"
+  description: "A minimal Nbdev project"
+  repo-branch: main
+  repo-url: "https://github.com/joLahann/nbdev_cards"
